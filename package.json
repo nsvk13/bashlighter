@@ -1,0 +1,55 @@
+{
+  "name": "bashlighter",
+  "displayName": "Bash Highlighter for CI/CD",
+  "description": "Intelligent bash syntax highlighting in GitLab CI and GitHub Actions workflows",
+  "version": "0.1.0",
+  "publisher": "bashlighter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nsvk13/bashlighter"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "bash",
+    "shell",
+    "gitlab",
+    "github",
+    "ci",
+    "cd",
+    "yaml",
+    "syntax",
+    "highlighting"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./client/out/extension.js",
+  "contributes": {},
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "node esbuild.config.js",
+    "build:dev": "node esbuild.config.js --dev",
+    "lint": "eslint . --ext .ts",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "@vscode/vsce": "^2.22.0",
+    "esbuild": "^0.27.2",
+    "eslint": "^9.39.2",
+    "typescript": "^5.3.3"
+  }
+}

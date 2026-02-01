@@ -1,0 +1,16 @@
+.git/**
+.vscode/**
+.github/**
+node_modules/**
+test/**
+src/**
+client/src/**
+server/src/**
+*.ts
+!*.d.ts
+*.map
+.eslintrc*
+tsconfig*.json
+vitest.config.ts
+esbuild.config.js
+.gitignore
